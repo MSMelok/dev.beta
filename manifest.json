@@ -1,0 +1,26 @@
+{
+  "name": "Muhammad Meluk | Web Developer",
+  "short_name": "M. Meluk",
+  "description": "Portfolio website for Muhammad Meluk, a Web Developer based in Alexandria, Egypt",
+  "start_url": "/dev/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/dev/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/dev/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/dev/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
