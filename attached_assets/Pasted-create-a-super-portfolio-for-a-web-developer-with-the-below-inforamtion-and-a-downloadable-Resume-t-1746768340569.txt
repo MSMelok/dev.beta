@@ -1,0 +1,85 @@
+create a super portfolio for a web developer with the below inforamtion and a downloadable Resume, this will not be changed for years so please make it exeptional use fonts for develpment and reguler fonts to make it look good and an avatar will be provided for you to add it as a picture.
+
+- Personal Info
+= Name: Muhammad Meluk
+= Title: Web Developer & More
+= Location: Alexandria, Egypt
+= Phone: +20 102-272-3804
+= Email: MuhammadMeluk@gmail.com
+
+- Social Links:
+= nFacebook:
+= WhatsApp:
+= GitHub:
+
+- About
+“I'm Muhammad Salah, a Web Developer specializing in HTML, CSS, and Vanilla JavaScript. With experience in customer service and technical support, I create user-friendly, responsive websites that blend functionality with great design.”
+
+- Services Offered
+= Design From Scratch: Modern and visually appealing layouts.
+= Develop Live Projects: Functional and responsive web solutions.
+= Solve Problems: Scalable and intuitive web applications.
+
+
+- Education & Certifications
+= Technical Support Fundamentals - Google - Sep 2022 - 98.75 - (https://www.coursera.org/account/accomplishments/certificate/VRLVFG3EY9LB)
+= Getting Started with Python - University of Michigan - Nov 2022 - 98.34% - (https://www.coursera.org/account/accomplishments/certificate/TW9GKDPR2S3Z)
+= Computer Networking - Google - Nov 2022 - 94.50% - (https://www.coursera.org/account/accomplishments/certificate/XT4CH9JRT6BV)
+= Microsoft Excel - Jul 2023 - 100% - (https://www.coursera.org/account/accomplishments/certificate/22MW4P93UPP4)
+= Foundations of Cybersecurity	Google - Feb 2024 - 98.75% - (https://www.coursera.org/account/accomplishments/certificate/FZ2UNZJYCZCC)
+= English Test (C1 Advanced) - EF SET - Aug 2024 - C1 - (https://cert.efset.org/k1q97e)
+= Commerce Diploma - Local Institution - 2022 - (NO URL)
+
+- Portfolio Projects
+= BoxMate – Equipment Selection System - (https://msmelok.github.io/box-mate/)
+= ClipMate – Clipboard Manager - (https://msmelok.github.io/clipmate/index.html)
+= TimeZone Converter – USA to CLT Timezones - (https://msmelok.github.io/convert/)
+= Tech Documentation Assistant – Formatter Tool - (https://msmelok.github.io/doc/)
+= Tech Support Dashboard – For Optimum USA - (https://msmelok.github.io/doct/)
+= WhatsApp Quick Message – Chat w/o Saving - (https://msmelok.github.io/finder/)
+= FindMe QR Code – Digital Contact Card - (https://msmelok.github.io/findmeqr/)
+= Gaza War Counter – War Day Counter - (https://msmelok.github.io/gaza/)
+= Mega NetCafe & Repair – NetCafe Website - (https://msmelok.github.io/mega/)
+= Optimum Stream Mimic – Agent Training - (https://msmelok.github.io/opt-stream/)
+= XO Game – Multiplayer Game - (https://msmelok.github.io/xo/)
+= 404 Page – Maintenance Page - (https://msmelok.github.io/freediving-hurgada-404/)
+= Vet Corner Clinic – Clinic Site - (https://msmelok.github.io/vetcorner/)
+= R4 Trainer Store – FLiNG Trainers - (https://msmelok.github.io/trainerstore/)
+= Plastic Plus Group – Factory Site - (https://msmelok.github.io/plastic-plus/)
+= Avaya TN Book – Avaya TN Helper (Deprecated) - (https://msmelok.github.io/tn/)
+
+Contact Section
+Embedded Google Map: Alexandria, Egypt
+Contact info likre Email and phone number and whatsapp number.
+
+- in the head:
+<link rel="manifest" href="manifest.json">
+<meta name="description" content="Portfolio of Muhammad Meluk, a front-end developer with experience in technical support and web app development using HTML, CSS, and JavaScript.">
+<meta name="keywords" content="Muhammad Meluk, Web Developer, Portfolio, HTML, CSS, JavaScript, Technical Support, Egypt, Alexandria">
+<meta name="author" content="Muhammad Meluk">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Muhammad Meluk | Web Developer">
+<meta property="og:description" content="Explore the web development projects and services of Muhammad Meluk.">
+<meta property="og:image" content="https://msmelok.github.io/assets/images/my-avatar.png">
+<meta property="og:url" content="https://msmelok.github.io/dev">
+<meta name="twitter:card" content="summary_large_image">
+
+
+add manifest.json:
+{
+  "name": "Muhammad Meluk",
+  "short_name": "msmelok",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1E88E5",
+  "icons": [
+    {
+      "src": "./assets/images/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
+

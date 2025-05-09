@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+
+  /* Custom colors for code highlighting */
+  --code-pink: 330 86% 62%;
+  --code-indigo: 255 92% 76%;
+  --secondary: 122 72% 40%;
+  --chart-1: 207 90% 54%;
+  --chart-2: 122 72% 40%;
+  --chart-3: 329 86% 56%;
+  --chart-4: 42 93% 59%;
+  --chart-5: 220 83% 65%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 122 72% 40%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Custom fonts */
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-code {
+    font-family: 'Fira Code', monospace;
+  }
+
+  /* Custom animation durations */
+  .animate-bounce-slow {
+    animation: bounce 3s infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-ping-slow {
+    animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  
+  .animate-float-slow {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+}
+
+@layer components {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-600;
+  }
+
+  /* Progress bar for skills */
+  .progress-bar {
+    @apply h-1.5 rounded-sm bg-slate-200 dark:bg-slate-700 overflow-hidden;
+  }
+  .progress-bar-fill {
+    @apply h-full bg-primary rounded-sm;
+  }
+
+  /* Typing effect */
+  .typing-effect {
+    @apply border-r-2 border-primary whitespace-nowrap overflow-hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: hsl(var(--primary)); }
+  }
+
+  /* Terminal window styling */
+  .terminal {
+    @apply font-code bg-slate-800 dark:bg-slate-900 rounded-lg p-4 text-white relative;
+  }
+  .terminal-header {
+    @apply flex mb-2;
+  }
+  .terminal-button {
+    @apply w-3 h-3 rounded-full mr-1.5;
+  }
+  .terminal-red { @apply bg-red-500; }
+  .terminal-yellow { @apply bg-yellow-400; }
+  .terminal-green { @apply bg-green-500; }
+  .terminal-prompt {
+    @apply text-green-400;
+  }
+  .terminal-command {
+    @apply text-white;
+  }
+  .terminal-output {
+    @apply text-slate-400;
+  }
+
+  /* Custom transitions */
+  .project-card {
+    @apply transition-all duration-300;
+  }
+  .project-card:hover {
+    @apply transform -translate-y-1 shadow-xl;
+  }
+
+  /* Colors for code styling */
+  .text-code-pink {
+    color: hsl(var(--code-pink));
+  }
+  .text-code-indigo {
+    color: hsl(var(--code-indigo));
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional keyframe animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
